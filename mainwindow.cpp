@@ -31,7 +31,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::shuffle() {
     std::random_device rd;
-//    std::shuffle(icons.begin(), icons.end(), rd);
+    std::shuffle(icons.begin(), icons.end(), rd);
     int i = 0;
     for(auto button : this->ui->mainField->buttons()) {
          iconsPairs[button] = icons[i++];
